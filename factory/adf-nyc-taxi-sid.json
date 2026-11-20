@@ -1,0 +1,16 @@
+{
+	"name": "adf-nyc-taxi-sid",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f150757e-7a55-48ca-8db3-e489909385b1",
+		"tenantId": "0c276af4-8821-493d-9b72-44bb3989c300"
+	}
+}

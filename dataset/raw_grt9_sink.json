@@ -1,0 +1,28 @@
+{
+	"name": "raw_grt9_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "nyc_web",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_monthgrt9": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "trip-data/green_tripdata_2023-@{dataset().p_monthgrt9}.parquet",
+					"type": "Expression"
+				}
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
